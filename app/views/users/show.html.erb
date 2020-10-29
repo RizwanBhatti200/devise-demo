@@ -3,6 +3,11 @@
     <%= image_tag @user.picture, style:"width: 150px; height: 150px;; display: inline-block "%>
   <% end %> 
 </p>
+<p>
+  <% if  @user.avatar.present? %>
+    <%= image_tag @user.avatar, style:"width: 150px; height: 150px;; display: inline-block "%>
+  <% end %> 
+</p>
 
 <p>
   <strong>Name:</strong>
